@@ -43,7 +43,7 @@ body {
 /* Box row styles */
 
 .box {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   /* height: 100dvh; */
   &.one {
     display: flex;
@@ -79,7 +79,16 @@ body {
   &.six {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    height: 100dvh;
+    background-color: aquamarine;
+  }
+  &.seven {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 8rem;
+    border: none;
+    font-size: 0.8rem;
   }
 }
 
@@ -207,11 +216,31 @@ button:hover {
 /* Box 6 Styles */
 
 .box.six .perc-left {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  margin: auto;
   & img {
     width: 400px;
     height: 300px;
+  }
+}
+
+.box.six .perc-right {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 2fr 1fr 1fr;
+  & .perc-right-title {
+    grid-column: 1 / 3;
+    margin: 4rem 4rem;
+  }
+  & .middle-left {
+    margin: 0 4rem;
+  }
+  & .middle-right {
+    margin: 0 6rem 0 1rem;
+  }
+  & button {
+    background-color: var(--secondary-button-color);
+    border: var(--button-border);
+    margin: auto;
+    width: 8.5rem;
   }
 }
