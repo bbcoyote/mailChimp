@@ -72,6 +72,11 @@ body {
     grid-template-columns: repeat(4, 1fr);
     height: 125dvh;
   }
+  &.five {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: repeat(5, 1fr);
+  }
 }
 
 /* Box 2 styles */
@@ -153,3 +158,5 @@ button:hover {
   background-color: var(--primary-button-color);
   border: var(--button-border);
 }
+
+/* box 5 styles */
